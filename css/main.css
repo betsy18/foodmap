@@ -1,5 +1,28 @@
-body {
+* {
 	font-family: 'Raleway', sans-serif !important;
-	color: #fff;
+	background-color: rgb(43,43,43);
 }
 
+
+/* clases reutilizables */
+.vh100 {
+	height: 100vh;
+}
+
+.container-flex-column{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2em;
+}
+
+.container-flex{
+	display: flex;
+	justify-content: center;
+}
+
+
+/* estilos index */
+main h1{
+	color: rgb(176,120,70);
+}
