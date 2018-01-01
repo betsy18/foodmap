@@ -21,8 +21,32 @@
 	justify-content: center;
 }
 
-
-/* estilos index */
-main h1{
+h1, h3{
 	color: rgb(176,120,70);
+	text-align: center;
+}
+
+/* estilos menu */
+.container-sub{
+	display: flex;
+	justify-content: space-between;
+}
+
+.container-sub span{
+	border:0.1rem solid rgb(255, 255, 255);
+	background-color: rgba(50, 50, 54, 0.3);
+	width: 10vw;
+	height: 6vh;
+}
+
+.container-sub hr{
+	border: 0.1rem solid rgb(255, 255, 255);
+	width: 80vw;
+}
+
+.menu{
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-around;
+	width: 30vw;
 }
