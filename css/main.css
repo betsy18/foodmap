@@ -45,8 +45,11 @@ h1, h3{
 }
 
 .menu{
-	display: flex;
-	flex-direction: column-reverse;
-	justify-content: space-around;
-	width: 30vw;
+	display: inline-flex;
+	max-width: 30vw;
+	height: 15vh;
+}
+
+.menu img{
+	margin: 0.2em;
 }
