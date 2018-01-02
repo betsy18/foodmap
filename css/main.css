@@ -60,3 +60,9 @@ h1, h3{
     border-radius: 10em;
     cursor: pointer; 
 }
+
+/* estilos restaurante */
+
+.section-restaurant{
+	color: white;
+}
