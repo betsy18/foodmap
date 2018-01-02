@@ -2,6 +2,8 @@ $(document).ready(function() {
 // var $modal = $('#modal');
 // $('#modalRes').modal('show');
   console.log(data(restaurant));
+  alert('La ventana se redireccionara dentro de 6 segundos');
+  redirect();
 });
 
 function data(obj) {
@@ -27,4 +29,10 @@ function data(obj) {
     $('.plato3').append('<p>' + 'Plato: ' + $plato3 + '</p>' + '<br>');
     $('.plato3').append('<p>' + 'Precio: ' + $precio3 + '</p>' + '<br>');
   });
+
+  function redirect() {
+    setTimeout(function() {
+      window.location.href = '../views/menu.html';
+    }, 5000);
+  }
 }
