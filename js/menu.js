@@ -1,21 +1,48 @@
 $(document).ready(function() {
+  // variables
   var $menu = $('#select');
-  if ($menu.val('La Tranquera BBQ')) {
-    juego(restaurant);
-  } else if ($menu.val('EL 10 carnes y vinos')) {
+  var $img = $('.menu > img');
+  // var $firts = $('.menu > img').first;
 
-  } else if ($menu.val('Baco y Vaca')) {
+  if ($menu.val('miraflores')) {
+    data(restaurant);
+    // ejecutar();
+  } else if ($menu.val('lince')) {
+    
+  } else if ($menu.val('sanIsidro')) {
 
   };
-  // console.log(restaurant);
+
+
+  // evento
+  $img.mouseover(function() {
+    $img.addClass('hover');
+  });
 });
 
-function juego(obj) {
-	var prop = Object.keys(obj);
-	console.log(prop);
-  for (var nombre in obj['La Tranquera BBQ']) {
-		console.log(nombre);
+// $firts.on('click', function(event) {
+//   // event.preventDefault();
+//   ejecutar();
+// });
 
-	}
-	
+// function ejecutar() {
+//   $('#modal').on('show.bs.modal', function(evento) {
+//     console.log('Modal Mostrada con Evento de Boostrap');
+//   });
+// }
+
+
+function data(obj) {
+  obj.forEach(function(key, index) {
+    var $nombre = key.nombre;
+    var $direccion = key.direccion;
+    var $plato1 = key.plato1[0];
+    var $precio1 = key.plato1[1];
+    var $foto = key.plato1[2];
+    console.log($precio1);
+    alert($nombre);
+    alert($direccion);
+    alert($plato1);
+    alert($precio1);
+  });
 }

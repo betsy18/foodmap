@@ -54,3 +54,9 @@ h1, h3{
 	margin: 0.2em;
 }
 
+.hover {
+	filter: sepia(60%);
+    box-shadow: 10em 10em 20em rgb(153, 153, 153);
+    border-radius: 10em;
+    cursor: pointer; 
+}
